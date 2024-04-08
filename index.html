@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEBSITE || APARTMENT WATERBILL CALCULATOR</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="header">
+        <h1>WELCOME TO THE APARTMENT WATERBILL CALCULATOR</h1>
+        <h3>HERE TO GIVE YOU THE BEST EXPERIENCE</h3>
+    </div> 
+
+    <div class="container">
+      <form class="house-form">
+        <h3>Create a House</h3>
+        <input 
+        type="text"
+        name="tenant-name"
+        value=""
+        placeholder="Enter the name of the tenant"
+        class="input-text"
+        id="tenant-name"
+        />
+        <br />
+        <input
+          type="text"
+          name="house-number"
+          value=""
+          placeholder="Enter a house number"
+          class="input-text"
+          id = "house-number"
+        />
+        <br />
+        <input
+          type="text"
+          name="meter-value"
+          value=""
+          placeholder="Enter house water meter value"
+          class="input-text"
+          id = "meter-value"
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Create House"
+          class="submit"
+        />
+      </form>
+    </div>
+
+    <div id="houses"></div>
+  </body>
+</html>

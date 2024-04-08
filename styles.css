@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family:sans-serif;
+}
+
+#header {
+  display: list-item;
+  text-align: center;
+  background: #74ccf4;
+  height: 100px;
+  padding: 10px;
+}
+
+
+.container {
+  padding: 1rem;
+  height: auto;
+  background: #fdfdfd;
+}
+
+.house-form {
+  width: 100%;
+  text-align: center;
+}
+
+.submit {
+  position: relative;
+  background-color: #04669b;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  font-family: monospace;
+  margin: 3px;
+}
+
+.submit:hover {
+  background-color: whitesmoke;
+  border: #04669b solid 1px;
+  color: #04669b;
+}
+
+.input-text {
+  border-radius: 5px;
+  height: 2rem;
+  width: 60%;
+  font-size: 18px;
+  font-family: monospace;
+  margin: 3px;
+}
