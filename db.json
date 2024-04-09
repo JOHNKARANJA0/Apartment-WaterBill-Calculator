@@ -8,25 +8,32 @@
       "meterValue": 0
     },
     {
-      "id": "1",
+      "id": "2",
       "name": "Viviane Achieng",
       "hseNo": "2",
       "amount": 0,
       "meterValue": 0
     },
     {
-      "id": "1",
+      "id": "3",
       "name": "Jane Karanja",
       "hseNo": "3",
       "amount": 0,
       "meterValue": 0
     },
     {
-      "id": "5e78",
+      "id": "bcc7",
+      "name": "Lando Viviane",
+      "hseNo": "2",
+      "amount": 0,
+      "meterValue": 0
+    },
+    {
+      "id": "965f",
       "name": "JOHN WAMBUA",
       "hseNo": "2",
-      "amount": "2000",
-      "meterValue": "20"
+      "amount": 0,
+      "meterValue": 0
     }
   ]
 }
