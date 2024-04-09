@@ -1,5 +1,5 @@
 # Apartment-WaterBill-Calculator
-## NECESITIES
+## NECESSITIES
  * HTML
  * JAVASCRIPT
  * DB.JSON
