@@ -1,0 +1,26 @@
+{
+    "house": [
+        {
+            "id": "1",
+            "name": "John Karanja",
+            "hseNo": "1",
+            "meterValue": 0,
+            "amount": 0
+        },
+        {
+            "id": "1",
+            "name": "Viviane Achieng",
+            "hseNo": "2",
+            "meterValue": 0,
+            "amount": 0
+        },
+        {
+            "id": "1",
+            "name": "Jane Karanja",
+            "hseNo": "3",
+            "amount": 0,
+            "meterValue": 0
+            
+        }
+    ]
+}

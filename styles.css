@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
 #header {
@@ -10,7 +10,6 @@ body {
   height: 100px;
   padding: 10px;
 }
-
 
 .container {
   padding: 1rem;
@@ -36,6 +35,27 @@ body {
   margin: 3px;
 }
 
+.card {
+  background-color: #EBF4FA;
+  text-align: center;
+  border: rgb(26, 25, 80) solid 1px;
+  padding: 10px;
+  width: 15rem;
+  height: 20rem;
+  display: inline-grid;
+  margin: 10px;
+}
+/*
+.card {
+  background-color: #EBF4FA;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}*/
 .submit:hover {
   background-color: whitesmoke;
   border: #04669b solid 1px;
