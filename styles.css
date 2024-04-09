@@ -17,7 +17,7 @@ body {
   background: #fdfdfd;
 }
 
-.house-form {
+#house-form {
   width: 100%;
   text-align: center;
 }
@@ -45,17 +45,25 @@ body {
   display: inline-grid;
   margin: 10px;
 }
-/*
-.card {
-  background-color: #EBF4FA;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+button {
+  position: relative;
+  background-color: #04669b;
+  border: none;
   border-radius: 5px;
-  margin: 10px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}*/
+  height: 3rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  }
+  
+  button:hover {
+  background-color: whitesmoke;
+  border: #04669b solid 1px;
+  color: #04669b;
+  }
+  
+
 .submit:hover {
   background-color: whitesmoke;
   border: #04669b solid 1px;

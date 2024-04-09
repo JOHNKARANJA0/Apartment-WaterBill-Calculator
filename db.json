@@ -1,26 +1,32 @@
 {
-    "house": [
-        {
-            "id": "1",
-            "name": "John Karanja",
-            "hseNo": "1",
-            "meterValue": 0,
-            "amount": 0
-        },
-        {
-            "id": "1",
-            "name": "Viviane Achieng",
-            "hseNo": "2",
-            "meterValue": 0,
-            "amount": 0
-        },
-        {
-            "id": "1",
-            "name": "Jane Karanja",
-            "hseNo": "3",
-            "amount": 0,
-            "meterValue": 0
-            
-        }
-    ]
+  "house": [
+    {
+      "id": "1",
+      "name": "John Karanja",
+      "hseNo": "1",
+      "amount": 0,
+      "meterValue": 0
+    },
+    {
+      "id": "1",
+      "name": "Viviane Achieng",
+      "hseNo": "2",
+      "amount": 0,
+      "meterValue": 0
+    },
+    {
+      "id": "1",
+      "name": "Jane Karanja",
+      "hseNo": "3",
+      "amount": 0,
+      "meterValue": 0
+    },
+    {
+      "id": "5e78",
+      "name": "JOHN WAMBUA",
+      "hseNo": "2",
+      "amount": "2000",
+      "meterValue": "20"
+    }
+  ]
 }
