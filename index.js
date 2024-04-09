@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 meterValueElement.textContent = `METER VALUE: ${newMeterValue}`;
                 alert("Your Water bill has been updated successfully!"); 
                 })
+                event.target.previousSibling.value = ""
             }
         }
         else if (newMeterValue === house.meterValue){

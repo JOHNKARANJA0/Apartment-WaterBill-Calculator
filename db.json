@@ -4,15 +4,15 @@
       "id": "1",
       "name": "John Karanja",
       "hseNo": "1",
-      "amount": 0,
-      "meterValue": 0
+      "amount": 888,
+      "meterValue": 444
     },
     {
       "id": "2",
       "name": "Viviane Achieng",
       "hseNo": "2",
-      "amount": 0,
-      "meterValue": 0
+      "amount": 17266,
+      "meterValue": 8888
     },
     {
       "id": "3",
