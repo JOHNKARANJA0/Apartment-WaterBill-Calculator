@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Please input a number")
             }else{
                 const waterUsage = newMeterValue - house.meterValue;
-                let amount = waterUsage * 2;
+                let amount = waterUsage * 200;
                 // Update db.json with new meter value and amount (using Fetch API with error handling)
                 fetch(`http://localhost:3000/house/${houseId}`, {
                 method: "PATCH",

@@ -4,15 +4,15 @@
       "id": "1",
       "name": "John Karanja",
       "hseNo": "1",
-      "amount": 888,
-      "meterValue": 444
+      "amount": 0,
+      "meterValue": 0
     },
     {
       "id": "2",
       "name": "Viviane Achieng",
       "hseNo": "2",
-      "amount": 17266,
-      "meterValue": 8888
+      "amount": 0,
+      "meterValue": 0
     },
     {
       "id": "3",
@@ -34,6 +34,20 @@
       "hseNo": "2",
       "amount": 0,
       "meterValue": 0
+    },
+    {
+      "id": "0bc3",
+      "name": "Grace Wanjiru",
+      "hseNo": "7",
+      "amount": "0",
+      "meterValue": "0"
+    },
+    {
+      "id": "7eb8",
+      "name": "Joseph Mutua",
+      "hseNo": "8",
+      "amount": "0",
+      "meterValue": "0"
     }
   ]
 }
