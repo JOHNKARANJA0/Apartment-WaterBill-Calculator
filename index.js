@@ -1,3 +1,4 @@
+// ensures that the document is fully loaded before the function can execute
 document.addEventListener("DOMContentLoaded", function () {
   const cardContainer = document.getElementById("card-container");
   // create a card to display the values fetched from the db.json
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  //fetch method
+  //fetch method to fetch and append the values to the webpage
   fetch("http://localhost:3000/house")
     .then((response) => response.json())
     .then((data) => {
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   const houseForm = document.getElementById("house-form");
-  //Updated method
+  //event listener to listen for the form when the input is submitted
   houseForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const amount = document.getElementById("amount").value;
 
     const newHouse = { name, hseNo, amount, meterValue };
-
+    // fetch method to update the values from the form into the webpage and the db.json 
     fetch("http://localhost:3000/house", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -75,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         houseForm.reset();
       });
   });
+  // function to delete the card and its values from the dom and db.json
   function handleDeleteClick(event) {
     // Get house ID from button data
     const houseId = event.target.dataset.houseId; 
@@ -89,16 +91,19 @@ document.addEventListener("DOMContentLoaded", function () {
       event.target.parentNode.remove();
     });
   }
+  //function to update the click event when you click the update button on the card
   function handleUpdateClick(event, card) {
     const houseId = event.target.dataset.houseId;
 
-    // Fetch house data from db.json 
+    // Fetch house data from db.json using it ID
     fetch(`http://localhost:3000/house/${houseId}`)
       .then((response) => response.json())
       .then((fetchedHouse) => {
         const house = fetchedHouse;
         const newMeterValue = parseInt(event.target.previousSibling.value);
+        //checks for the input to be greater than the current meter value
         if (newMeterValue> house.meterValue){
+            //checks if the meter input is not a number
             if (isNaN(newMeterValue)){
                 alert("Please input a number")
             }else{
@@ -121,16 +126,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 meterValueElement.textContent = `METER VALUE: ${newMeterValue}`;
                 alert("Your Water bill has been updated successfully!"); 
                 })
+                //makes the input space clear when the input is used
                 event.target.previousSibling.value = ""
             }
         }
+        // to check when the user did not use any water
         else if (newMeterValue === house.meterValue){
             alert("Your bill is up to date")
         }
+        // when the user enters an invalid input
         else{
             alert("INVALID INPUT")
         }
       })
+      // checks and notify the user when there is an error
       .catch((error) => console.error(error));
     }
 });
